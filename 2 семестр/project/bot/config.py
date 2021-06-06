@@ -5,7 +5,7 @@ from binance.currencies import MAINTAINED_COINS
 
 
 # Токен телеграм-бота
-BOT_TOKEN = '1718142573:AAEQ9xXdHwXKxlL2DWLOBWPKIAjQb9It3l8'
+BOT_TOKEN = '1758000737:AAFHgpyVMeYYub7qVB263GEl7i9an87RKfQ'
 
 # Под какими ключами в словаре будут храниться веденные пользователем API и SECRET ключи
 API_KEY_DICT_KEY = 'API_KEY'
