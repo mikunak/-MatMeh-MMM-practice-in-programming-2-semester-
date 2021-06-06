@@ -23,4 +23,4 @@ def test_ticker_24hr(client: Client):
         'symbol': 'BTCTUSD',
     }
     price_change = client.get_ticker_24hr(**params)
-    assert float(price_change) > 0
+    assert type(price_change) is float
