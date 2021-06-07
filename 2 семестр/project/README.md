@@ -1,4 +1,4 @@
-# CryptoBot
+# CryptBot
 
 ## Running
 ```
