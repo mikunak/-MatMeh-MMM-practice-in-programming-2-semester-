@@ -27,6 +27,10 @@
     Complex operator / (const double);
     ostream& operator<< (const Complex&);
     istream& operator>> (Complex&);
+    bool operator == (complex& com);  
+    bool operator != (complex& com); 
+    bool operator > (complex& com); 
+    bool operator < (complex& com);
     friend ostream & operator<< (ostream&, const Complex&);
     friend istream & operator>> (istream&, Complex&);
   };
@@ -57,6 +61,42 @@
   {
   }
 
+bool complex:: operator > (complex& com) 
+{  
+    if(this->re > com.re) 
+        return 1; 
+    else if(this->re == com.re && this->im > com.im) 
+        return 1; 
+    else 
+        return 0;
+}
+ 
+bool complex ::operator < (complex& com) 
+{ 
+    if(this->re < com.re) 
+        return 1; 
+    else if(this->re == com.re && this->im < com.im) 
+        return 1; 
+    else 
+        return 0;
+ 
+}
+ 
+bool complex::operator != (complex& com) 
+{  
+    if(this->re != com.re || this->im != com.im) 
+       return 1; 
+    else  
+        return 0;
+}
+ 
+bool complex::operator==(complex& com) 
+{  
+    if(this->re == com.re && this->im == com.im) 
+        return 1; 
+    else 
+        return 0;
+}
 
  double mod (double re, double im)
   {
